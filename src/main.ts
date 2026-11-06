@@ -12,10 +12,11 @@ async function getCoordinates(cityName : string){
     const locationData = await response.json();
     const latitude = locationData?.results[0]?.latitude;
     const longitude = locationData?.results[0]?.longitude;
+
     if(!latitude || !longitude){
       throw new Error("this place doesnt exsist");
-      
     }
+
     return {
       latitude,
       longitude
@@ -32,25 +33,25 @@ async function getWeatherInfo(coordinates : coordinates){
     const weatherData = response.json();
     return weatherData;
   }catch(e){
-
+    console.log(e)
   }
 }
 
 async function getWeather(cityName : string) : Promise<any> {
-  
   try{
     if(!cityName && cityName === ""){
       return
     }
     const coordinates = await getCoordinates(cityName);
     const errorDiv = document.getElementById("error");
+
     if(!errorDiv) return;
     if(!coordinates){
-      
       errorDiv.style.display = "block";
       errorDiv.innerText = "your location couldnt be located"
       return;
     }
+
     const weatherData = await getWeatherInfo(coordinates)
     
     const currentWeatherInfo = document.getElementById("currentWeatherInfo");
@@ -93,6 +94,6 @@ async function getWeather(cityName : string) : Promise<any> {
     ).join("");
 
   }catch(e){
-
+    console.log(e)
   }
 }
