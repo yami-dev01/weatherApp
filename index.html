@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weatherapp</title>
+    <script defer src = "./src/main.ts"></script>
+    <link rel="stylesheet" href="./src/style.css">
+  </head>
+  <body>
+    <h1>Weather App</h1>
+    <input type="text" placeholder="enter the city you want to search weather for" onchange="getWeather(event.target.value)">
+    <div id="error"></div>
+    <div type="text" id="currentWeatherInfo"></div>
+    <div type="text" id="futurePredictions"></div>
+  </body>
+</html>
