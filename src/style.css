@@ -1,0 +1,112 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #2d3436;
+  text-align: center;
+}
+
+
+h1 {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+
+input {
+  width: 300px;
+  max-width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+input:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+
+#currentWeatherInfo{
+  background-color: white;
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  display: none;
+}
+
+#futurePredictions {
+  background-color: white;
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  display: none;
+}
+#error{
+  background-color: white;
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  display: none;
+}
+
+
+h2 {
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 23px;
+}
+
+
+#currentWeatherInfo p {
+  font-size: 17px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+
+#futurePredictions div {
+  padding: 15px 0;
+}
+
+#futurePredictions h3 {
+  color: #6c5ce7;
+  margin-bottom: 10px;
+}
+
+#futurePredictions p {
+  font-size: 16px;
+  margin: 7px 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
